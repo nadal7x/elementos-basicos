@@ -14,7 +14,7 @@ body{
 header{
     display: flex;
     height: 10vh;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 main{
@@ -51,7 +51,7 @@ h5, h6 {
     font-family: "Ubuntu Condensed";
 }
 
-a, td, p, button{
+a, td, th, p, button{
     font-family: "Ubuntu";
 }
 
@@ -87,6 +87,9 @@ a:focus, a:hover {
     outline-offset: 0;
     text-decoration: none;
 }
+a:hover p{
+    color:hsl(86, 56%, 50%);
+}
 
 /*====================
 ========Image=========
@@ -95,6 +98,16 @@ a:focus, a:hover {
 img {
     max-width: 100%;
 }
+
+/*====================
+========Title=========
+======================*/
+.title-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
 
 /*====================
 ========Logo=========
@@ -111,6 +124,28 @@ img {
 
 .logo svg path{
     fill:hsl(19, 100%, 50%);
+}
+
+/*====================
+========Menu=========
+======================*/
+
+.menu{
+    width: max-content;
+}
+
+.menu svg{
+    height: 3em;
+    width: 3em;
+}
+
+.menu svg path{
+    fill:hsl(19, 100%, 50%);
+}
+
+.menu:hover svg path{
+    fill:hsl(86, 56%, 50%);
+    cursor: pointer;
 }
 
 /*====================
@@ -154,29 +189,20 @@ img {
     max-width: 45%;
 }
 
-.crud__table-grid, .crud__table-flex{
-    margin-bottom: 1em;
+.crud__table table{
+    background-color: hsl(0, 0%, 100%);
     width: 100%;
+    border-collapse: collapse;
 }
 
-.crud__table-grid{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: 0.5em;
+.crud__table table th{
+ font-size: 1.2em;
+ background-color: hsl(186, 55%, 83%);
 }
-
-.crud__table-grid-element{
-    width: 100%;
-}
-
-.crud__table-flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-}
-
-.crud__table-flex-element{
-    flex-basis: 25%;
+.crud__table table th, .crud__table table td{
+    border: solid 0.1em hsl(0, 0%, 0%);
+    text-align: center;
+    padding: 0.5em;
 }
 
 .crud__form{
@@ -287,7 +313,7 @@ img {
         font-size: 1.5em;
     }
 
-    .logo svg{
+    .logo svg, menu svg{
         height: 2em;
         width: 2em;
     }
@@ -303,14 +329,6 @@ img {
     .crud__table, .crud__form{
         min-width: 100%;
         max-width: 100%;
-    }
-
-    .crud__table-grid{
-        grid-gap: 0;
-    }
-
-    .crud__table-flex{
-        gap: 0;
     }
 
     .crud__store-button{
@@ -341,7 +359,7 @@ img {
         font-size: 1.5em;
     }
 
-    .logo svg{
+    .logo svg, .menu svg{
         height: 2em;
         width: 2em;
     }
@@ -359,12 +377,15 @@ img {
         max-width: 100%;
     }
 
-    .crud__table-grid{
-        grid-gap: 0;
+    .crud__table{
+        margin-bottom: 2em;
     }
 
-    .crud__table-flex{
-        gap: 0;
+    .crud__table table th{
+        font-size: 1em;
+    }
+    .crud__table table td{
+        font-size: 0.9em;
     }
 
     .crud__store-button{
@@ -383,7 +404,7 @@ img {
         font-size: 3em;
     }
 
-    .logo svg{
+    .logo svg, .menu svg{
         height: 4em;
         width: 4em;
     }

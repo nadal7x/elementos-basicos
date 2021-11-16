@@ -23,14 +23,21 @@
     
     <body>
         <header>
-            <div class="header-element logo">
-                <svg viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M0.75,8C0.75,8 5,7 8,9C8,9 8.5,12.75 10.5,12.75V11C10.5,11 11,12 12,12C13,12 13.5,11 13.5,11V12.75C15.5,12.75 16,9 16,9C19,7 23.25,8 23.25,8C21.25,9 21,12.5 21,12.5C17,12.5 17,15.75 17,15.75C12,14.75 12,18.5 12,18.5C12,18.5 12,14.75 7,15.75C7,15.75 7,12.5 3,12.5C3,12.5 2.75,9 0.75,8Z" />
-                </svg>
-            </div>
+            <div class="header-element title-container">
+                <div class="header-element logo">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M0.75,8C0.75,8 5,7 8,9C8,9 8.5,12.75 10.5,12.75V11C10.5,11 11,12 12,12C13,12 13.5,11 13.5,11V12.75C15.5,12.75 16,9 16,9C19,7 23.25,8 23.25,8C21.25,9 21,12.5 21,12.5C17,12.5 17,15.75 17,15.75C12,14.75 12,18.5 12,18.5C12,18.5 12,14.75 7,15.75C7,15.75 7,12.5 3,12.5C3,12.5 2.75,9 0.75,8Z" />
+                    </svg>
+                </div>
 
-            <div class="header-element title">
-                <h1>Título</h1>
+                <div class="header-element title">
+                    <h1>Título</h1>
+                </div>
+            </div>
+            <div class="header-element menu">
+                <svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                </svg>
             </div>
         </header>
 
@@ -41,49 +48,33 @@
 
             <div class="main-element crud">
                 <div class="crud__table">
-                    <div class="crud__table-grid">
-                        <div class="crud__table-grid-element">
-                            <img src="images/1.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-grid-element">
-                            <img src="images/2.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-grid-element">
-                            <img src="images/3.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-grid-element">
-                            <img src="images/4.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-grid-element">
-                            <img src="images/5.jpg" alt="ardillas">
-                        </div>
-                    </div>
-    
-                    <div class="crud__table-flex">
-                        <div class="crud__table-flex-element">
-                            <img src="images/1.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-flex-element">
-                            <img src="images/2.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-flex-element">
-                            <img src="images/3.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-flex-element">
-                            <img src="images/4.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-flex-element">
-                            <img src="images/5.jpg" alt="ardillas">
-                        </div>
-                    </div>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                        </tr>
+                        <tr>
+                            <td>777777</td>
+                            <td>Usuario1</td>
+                            <td>correo1@correo.com</td>
+                        </tr>
+                        <tr>
+                            <td>123456</td>
+                            <td>Usuario2</td>
+                            <td>correo2@correo.com</td>
+                        </tr>
+                        <tr>
+                            <td>121212</td>
+                            <td>Usuario3</td>
+                            <td>correo3@correo.com</td>
+                        </tr>
+                        <tr>
+                            <td>987654</td>
+                            <td>Usuario4</td>
+                            <td>correo4@correo.com</td>
+                        </tr>
+                    </table>    
                 </div>
     
                 <div class="crud__form">
