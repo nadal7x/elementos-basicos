@@ -286,6 +286,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .crud__form-input-check{
     display: inline-block;
     font-size: 1.2em;
+    margin: 0.2em 0;
 }
 
 .crud__form-input [type="checkbox"],.crud__form-input [type="radio"]{
