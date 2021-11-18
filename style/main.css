@@ -261,9 +261,6 @@ img {
 .crud__form-input{
     width: 100%;
 }
-.four-column-element{
-    max-width: 25%;
-}
 .crud__form-input input,.crud__form-input select{
     height: 2em;
 }
@@ -281,6 +278,11 @@ img {
 	padding: 0.2em 0.5em;
 	width: 100%;
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-left: -25px;
+}
+
 .crud__form-input__check{
     display: inline-block;
 }
