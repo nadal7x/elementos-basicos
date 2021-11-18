@@ -182,15 +182,15 @@ img {
     grid-gap: 1em;
 }
 .four-column{
-    grid-template-columns: repeat(4, minmax(25%, 1fr));  
+    grid-template-columns: repeat(4, minmax(1fr, 25%));  
 }
 
 .three-column{
-    grid-template-columns: repeat(3, minmax(33%, 1fr));
+    grid-template-columns: repeat(3, minmax(1fr, 33%));
 }
 
 .two-column{
-    grid-template-columns: repeat(2, minmax(50%, 1fr));
+    grid-template-columns: repeat(2, minmax(1fr, 50%));
 }
 
 .one-column{
