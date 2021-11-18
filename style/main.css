@@ -186,11 +186,11 @@ img {
 }
 
 .three-column{
-    grid-template-columns: repeat(3, minmax(33%, 1fr)));
+    grid-template-columns: repeat(3, minmax(33%, 1fr));
 }
 
 .two-column{
-    grid-template-columns: repeat(2, minmax(50%, 1fr)));
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
 }
 
 .one-column{
