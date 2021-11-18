@@ -261,6 +261,9 @@ img {
 .crud__form-input{
     width: 100%;
 }
+.four-column-element{
+    max-width: 25%;
+}
 .crud__form-input input,.crud__form-input select{
     height: 2em;
 }
@@ -287,9 +290,6 @@ img {
     height: 1em;
     margin-right: 1em;
     vertical-align: middle;
-}
-.four-column .crud__form-input{
-    max-width: 25%;
 }
 
 .crud__form-input input:focus, .crud__form-input textarea:focus{
