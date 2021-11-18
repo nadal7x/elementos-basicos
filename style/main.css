@@ -277,6 +277,9 @@ img {
 	padding: 0.2em 0.5em;
 	width: 100%;
 }
+.crud__form-input [type="checkbox"],.crud__form-input [type="radio"]{
+    width: 0;
+}
 
 .crud__form-input input:focus, .crud__form-input textarea:focus{
 	outline: none;
