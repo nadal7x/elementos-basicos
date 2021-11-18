@@ -51,7 +51,7 @@ h5, h6 {
     font-family: "Ubuntu Condensed";
 }
 
-a, td, th, p, button{
+a, td, th, p, button, label{
     font-family: "Ubuntu";
 }
 
@@ -179,18 +179,18 @@ img {
 ======================*/
 .four-column,.three-column,.two-column,.one-column{
     display: grid;
-    grid-gap: 1em;
+    grid-gap: auto;
 }
 .four-column{
-    grid-template-columns: repeat(4, minmax(1fr, 25%));  
+    grid-template-columns: repeat(4, 1fr);  
 }
 
 .three-column{
-    grid-template-columns: repeat(3, minmax(1fr, 33%));
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .two-column{
-    grid-template-columns: repeat(2, minmax(1fr, 50%));
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .one-column{
@@ -274,6 +274,9 @@ img {
 	font-weight: 600;
 	padding: 0.2em 0.5em;
 	width: 100%;
+}
+.crud__form-input__check{
+ display: inline-block;
 }
 .crud__form-input [type="checkbox"],.crud__form-input [type="radio"]{
     width: 1em;
