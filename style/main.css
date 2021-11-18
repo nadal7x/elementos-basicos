@@ -179,7 +179,7 @@ img {
 ======================*/
 .four-column,.three-column,.two-column,.one-column{
     display: grid;
-    grid-gap: auto;
+    grid-gap: 1em;
 }
 .four-column{
     grid-template-columns: repeat(4, 1fr);  
