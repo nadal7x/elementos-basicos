@@ -283,14 +283,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-left: -25px;
 }
 
-.crud__form-input__check{
+.crud__form-input-check{
     display: inline-block;
+    font-size: 1.2em;
 }
 
 .crud__form-input [type="checkbox"],.crud__form-input [type="radio"]{
     width: 1em;
     height: 1em;
-    margin-right: 1em;
+    margin: 0 1em 0 0.5em;
     vertical-align: middle;
 }
 
